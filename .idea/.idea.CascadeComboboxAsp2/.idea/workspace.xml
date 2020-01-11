@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e228002c-3771-482f-b376-7c82ca2efbd7" name="Default Changelist" comment="" />
+    <list default="true" id="e228002c-3771-482f-b376-7c82ca2efbd7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.CascadeComboboxAsp2/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CascadeComboboxAsp2/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CascadeComboboxAsp2/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CascadeComboboxAsp2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CascadeComboboxAsp2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/baru.db" beforeDir="false" afterPath="$PROJECT_DIR$/baru.db" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,6 +25,9 @@
     </option>
     <expand />
     <select />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Controllers/CustomersController.cs" root0="FORCE_HIGHLIGHTING" />
@@ -54,14 +62,18 @@
     <option name="directoryName" value="CkBNJYCJ" />
   </component>
   <component name="ProjectId" id="1WEjLhS3qxVLjgSQkIquvS4mURk" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="sqlite" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="TWShift.4" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.environmentSetup" />
   </component>
@@ -125,7 +137,7 @@
       <option name="presentableId" value="Default" />
       <updated>1578721595002</updated>
       <workItem from="1578721599922" duration="2983000" />
-      <workItem from="1578736472472" duration="2936000" />
+      <workItem from="1578736472472" duration="3978000" />
     </task>
     <servers />
   </component>
@@ -134,11 +146,38 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
     <state x="233" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578738893050">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="233" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1578738893050" />
+    <state width="1202" height="147" key="GridCell.Tab.0.bottom" timestamp="1578754879687">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1202" height="147" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1578754879687" />
+    <state width="1202" height="147" key="GridCell.Tab.0.center" timestamp="1578754879686">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1202" height="147" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1578754879686" />
+    <state width="1202" height="147" key="GridCell.Tab.0.left" timestamp="1578754879685">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1202" height="147" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1578754879685" />
+    <state width="1202" height="147" key="GridCell.Tab.0.right" timestamp="1578754879686">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1202" height="147" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1578754879686" />
     <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1578739403747">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

@@ -56,7 +56,6 @@
     </column>
     <index id="20" parent="7" name="IX_Customers_CityId">
       <ColNames>CityId</ColNames>
-      <ColumnCollations></ColumnCollations>
     </index>
     <key id="21" parent="7" name="PK_Customers">
       <ColNames>Id</ColNames>
@@ -86,7 +85,6 @@
     </column>
     <index id="26" parent="8" name="IX_Localities_CityId">
       <ColNames>CityId</ColNames>
-      <ColumnCollations></ColumnCollations>
     </index>
     <key id="27" parent="8" name="PK_Localities">
       <ColNames>Id</ColNames>
@@ -116,7 +114,6 @@
     </column>
     <index id="32" parent="9" name="IX_SubLocalities_LocalityId">
       <ColNames>LocalityId</ColNames>
-      <ColumnCollations></ColumnCollations>
     </index>
     <key id="33" parent="9" name="PK_SubLocalities">
       <ColNames>Id</ColNames>
@@ -142,7 +139,6 @@
     <index id="37" parent="10" name="sqlite_autoindex___EFMigrationsHistory_1">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>MigrationId</ColNames>
-      <ColumnCollations></ColumnCollations>
       <Unique>1</Unique>
     </index>
     <key id="38" parent="10" name="PK___EFMigrationsHistory">

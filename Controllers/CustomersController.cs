@@ -193,6 +193,10 @@ namespace CascadeComboboxAsp2.Controllers
                 customer.Id = vmEdit.CustomerId;
                 customer.FirstName = vmEdit.FirstName;
                 customer.LastName = vmEdit.LastName;
+                customer.CityId = Convert.ToInt32(vmEdit.SelectedCity.ToString());
+                customer.LocalityId = Convert.ToInt32(vmEdit.SelectedLocality.ToString());
+                customer.SubLocalityId = Convert.ToInt32(vmEdit.SelectedSubLocality.ToString());
+
 
                 _context.Entry(customer).State = EntityState.Modified;
                 _context.SaveChanges();
