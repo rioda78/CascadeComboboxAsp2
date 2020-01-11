@@ -1,0 +1,87 @@
+﻿@model CustomerFormVM
+
+
+@{
+    ViewData["Title"] = "View";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@using (Html.BeginForm("Edit", "Customers"))
+{
+    <div class="form-group">
+        @Html.LabelFor(c => c.FirstName)
+        @Html.TextBoxFor(c => c.FirstName, new { @class = "form-control" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(c => c.LastName)
+        @Html.TextBoxFor(c => c.LastName, new { @class = "form-control" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.SelectedCity)
+        @Html.DropDownListFor(m => m.SelectedCity, Model.CityList, "Please select", new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.SelectedCity)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.SelectedLocality)
+        @Html.DropDownListFor(m => m.SelectedLocality, Model.LocalityList, "", new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.SelectedLocality)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.SelectedSubLocality)
+        @Html.DropDownListFor(m => m.SelectedSubLocality, Model.SubLocalityList, "", new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.SelectedSubLocality)
+    </div>
+
+    @Html.HiddenFor(m => m.CustomerId)
+
+    <div class="form-group">
+        <input type="submit" value="Save" class="btn btn-default" />
+    </div>
+}
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+
+    <script type="text/javascript">
+			var localityUrl = '@Url.Action("FetchLocalities")';
+			var subLocalityUrl = '@Url.Action("FetchSubLocalities")';
+            var localities = $('#SelectedLocality');
+            var subLocalities = $('#SelectedSubLocality');
+            $('#SelectedCity').change(function() {
+				localities.empty();
+				subLocalities.empty();
+				$.getJSON(localityUrl, { ID: $(this).val() },function (data) {
+					if (!data) {
+						return;
+					}
+					localities.append($('<option></option>').val('').text('Please select'));
+					$.each(data, function(index, item) {
+						localities.append($('<option></option>').val(item.val).text(item.text));
+					});
+				});
+			})
+            $('#SelectedLocality').change(function() {
+				subLocalities.empty();
+                $.getJSON(subLocalityUrl, { ID: $(this).val() },function (data) {
+					if (!data) {
+						return;
+					}
+                    subLocalities.append($('<option></option>').val('').text('Please Select'));
+					$.each(data, function(index, item) {
+						subLocalities.append($('<option></option>').val(item.val).text(item.text));
+					});
+				});
+			})
+
+    </script>
+
+}
+
