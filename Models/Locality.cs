@@ -15,8 +15,7 @@ namespace CascadeComboboxAsp2.Models
 
         public int CityId { get; set; }
         public City City { get; set; }
-
-        public virtual ICollection<Customer> Customers { get; set; }
+        
         public virtual ICollection<SubLocality> SubLocalities { get; set; }
     }
 }

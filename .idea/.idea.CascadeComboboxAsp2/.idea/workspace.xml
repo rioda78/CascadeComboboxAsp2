@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e228002c-3771-482f-b376-7c82ca2efbd7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.CascadeComboboxAsp2/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="e228002c-3771-482f-b376-7c82ca2efbd7" name="Default Changelist" comment="update edit">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CascadeComboboxAsp2/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CascadeComboboxAsp2/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CascadeComboboxAsp2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CascadeComboboxAsp2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/CustomersController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/CustomersController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Migrations/20200111104135_Pertama.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Migrations/20200111104135_Pertama.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Migrations/ApplicationDbContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Migrations/ApplicationDbContextModelSnapshot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/City.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/City.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/Customer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Customer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/Locality.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Locality.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/Customers/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Customers/Index.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/baru.db" beforeDir="false" afterPath="$PROJECT_DIR$/baru.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,24 +31,41 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="baru.db" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="baru.db" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="baru.db" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Controllers/CustomersController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Migrations/20200111104135_Pertama.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Views/SubLocalities/Delete.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Views/Localities/Delete.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Models/SubLocality.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Models/CustomerFormVM.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Views/Customers/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Views/Customers/Edit.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Models/Customer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Views/_ViewImports.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Models/Locality.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Models/City.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Data/ApplicationDbContext.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Controllers/CustomersController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Views/SubLocalities/Delete.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Views/Localities/Delete.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Views/Customers/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Views/Customers/Edit.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -49,12 +74,14 @@
         <option value="$PROJECT_DIR$/Views/SubLocalities/Delete.cshtml" />
         <option value="$PROJECT_DIR$/Views/Customers/Edit.cshtml" />
         <option value="$PROJECT_DIR$/Models/CustomerFormVM.cs" />
-        <option value="$PROJECT_DIR$/Controllers/CustomersController.cs" />
-        <option value="$PROJECT_DIR$/Views/Customers/Index.cshtml" />
-        <option value="$PROJECT_DIR$/Models/Customer.cs" />
-        <option value="$PROJECT_DIR$/Models/Locality.cs" />
         <option value="$PROJECT_DIR$/Models/SubLocality.cs" />
         <option value="$PROJECT_DIR$/Migrations/20200111104135_Pertama.cs" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/Models/City.cs" />
+        <option value="$PROJECT_DIR$/Models/Locality.cs" />
+        <option value="$PROJECT_DIR$/Controllers/CustomersController.cs" />
+        <option value="$PROJECT_DIR$/Models/Customer.cs" />
+        <option value="$PROJECT_DIR$/Views/Customers/Index.cshtml" />
       </list>
     </option>
   </component>
@@ -114,12 +141,7 @@
       <list>
         <serviceView>
           <treeState>
-            <expand>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="root:baru.db" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </treeState>
         </serviceView>
@@ -138,7 +160,17 @@
       <updated>1578721595002</updated>
       <workItem from="1578721599922" duration="2983000" />
       <workItem from="1578736472472" duration="3978000" />
+      <workItem from="1578754749409" duration="416000" />
+      <workItem from="1578779334668" duration="1043000" />
     </task>
+    <task id="LOCAL-00001" summary="update edit">
+      <created>1578754950798</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1578754950798</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -151,33 +183,39 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update edit" />
+    <option name="LAST_COMMIT_MESSAGE" value="update edit" />
   </component>
   <component name="WindowStateProjectService">
     <state x="233" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578738893050">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="233" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1578738893050" />
-    <state width="1202" height="147" key="GridCell.Tab.0.bottom" timestamp="1578754879687">
+    <state width="1202" height="147" key="GridCell.Tab.0.bottom" timestamp="1578755164889">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1202" height="147" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1578754879687" />
-    <state width="1202" height="147" key="GridCell.Tab.0.center" timestamp="1578754879686">
+    <state width="1202" height="147" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1578755164889" />
+    <state width="1202" height="147" key="GridCell.Tab.0.center" timestamp="1578755164888">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1202" height="147" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1578754879686" />
-    <state width="1202" height="147" key="GridCell.Tab.0.left" timestamp="1578754879685">
+    <state width="1202" height="147" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1578755164888" />
+    <state width="1202" height="147" key="GridCell.Tab.0.left" timestamp="1578755164888">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1202" height="147" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1578754879685" />
-    <state width="1202" height="147" key="GridCell.Tab.0.right" timestamp="1578754879686">
+    <state width="1202" height="147" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1578755164888" />
+    <state width="1202" height="147" key="GridCell.Tab.0.right" timestamp="1578755164889">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1202" height="147" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1578754879686" />
+    <state width="1202" height="147" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1578755164889" />
     <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1578739403747">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

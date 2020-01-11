@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace CascadeComboboxAsp2.Controllers
 {
-    public class CustomersController : Controller
+     public class CustomersController : Controller
     {
         private readonly ApplicationDbContext _context;
         public CustomersController(ApplicationDbContext context)
@@ -23,7 +23,10 @@ namespace CascadeComboboxAsp2.Controllers
         // GET: Customers
         public async Task<IActionResult> Index()
         {
-            var webAppDbContext = _context.Customers.Include(c => c.City);
+            var webAppDbContext = _context.Customers
+                .Include(c => c.SubLocality)
+                .ThenInclude(s => s.Locality)
+                .ThenInclude(l => l.City);
             return View(await webAppDbContext.ToListAsync());
         }
 
@@ -37,7 +40,7 @@ namespace CascadeComboboxAsp2.Controllers
             }
 
             var customer = await _context.Customers
-                .Include(c => c.City)
+                .Include(c => c.SubLocality)
                 .SingleOrDefaultAsync(m => m.Id == id);
 
             if (customer == null)
@@ -70,9 +73,7 @@ namespace CascadeComboboxAsp2.Controllers
                 {
                     customer.FirstName = vm.FirstName;
                     customer.LastName = vm.LastName;
-                    customer.CityId = vm.SelectedCity.Value;
-                    customer.LocalityId = vm.SelectedLocality.Value;
-                    customer.SubLocalityId = vm.SelectedSubLocality.Value;
+                    customer.SublocalityId = vm.SelectedSubLocality.Value;
                 }
                 _context.Customers.Add(customer);
                 _context.SaveChanges();
@@ -160,17 +161,17 @@ namespace CascadeComboboxAsp2.Controllers
             CustomerFormVM modelvm = new CustomerFormVM();
             {
                 Customer customer = _context.Customers.SingleOrDefault(c => c.Id == id);
-                var city = _context.Cities.SingleOrDefault(c => c.Id == customer.CityId); 
+                var sublocality = _context.SubLocalities.SingleOrDefault(c => c.Id == customer.SublocalityId); 
                 var locality = _context.Localities
-                    .SingleOrDefault(l => l.Id == customer.LocalityId);
-                var subLocality = _context.SubLocalities
-                    .SingleOrDefault(l => l.Id == customer.SubLocalityId);
+                    .SingleOrDefault(l => l.Id == sublocality.LocalityId);
+                var city = _context.Cities
+                    .SingleOrDefault(l => l.Id == locality.CityId);
                 modelvm.FirstName = customer.FirstName;
                 modelvm.CustomerId = customer.Id;
                 modelvm.LastName = customer.LastName;
                 modelvm.SelectedCity = city.Id;
                 modelvm.SelectedLocality = locality.Id;
-                modelvm.SelectedSubLocality = subLocality.Id;
+                modelvm.SelectedSubLocality = sublocality.Id;
                 ConfigureViewModel(modelvm);
             }
             return View(modelvm);
@@ -193,9 +194,7 @@ namespace CascadeComboboxAsp2.Controllers
                 customer.Id = vmEdit.CustomerId;
                 customer.FirstName = vmEdit.FirstName;
                 customer.LastName = vmEdit.LastName;
-                customer.CityId = Convert.ToInt32(vmEdit.SelectedCity.ToString());
-                customer.LocalityId = Convert.ToInt32(vmEdit.SelectedLocality.ToString());
-                customer.SubLocalityId = Convert.ToInt32(vmEdit.SelectedSubLocality.ToString());
+                customer.SublocalityId = Convert.ToInt32(vmEdit.SelectedSubLocality.ToString());
 
 
                 _context.Entry(customer).State = EntityState.Modified;
@@ -215,7 +214,7 @@ namespace CascadeComboboxAsp2.Controllers
             }
 
             var customer = await _context.Customers
-                .Include(c => c.City)
+                .Include(c => c.SubLocality)
                 .SingleOrDefaultAsync(m => m.Id == id);
             if (customer == null)
             {

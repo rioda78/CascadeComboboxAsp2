@@ -35,28 +35,18 @@ namespace CascadeComboboxAsp2.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("CityId")
-                        .HasColumnType("INTEGER");
-
                     b.Property<string>("FirstName")
                         .HasColumnType("TEXT");
 
                     b.Property<string>("LastName")
                         .HasColumnType("TEXT");
 
-                    b.Property<int>("LocalityId")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<int>("SubLocalityId")
+                    b.Property<int>("SublocalityId")
                         .HasColumnType("INTEGER");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("CityId");
-
-                    b.HasIndex("LocalityId");
-
-                    b.HasIndex("SubLocalityId");
+                    b.HasIndex("SublocalityId");
 
                     b.ToTable("Customers");
                 });
@@ -101,21 +91,9 @@ namespace CascadeComboboxAsp2.Migrations
 
             modelBuilder.Entity("CascadeComboboxAsp2.Models.Customer", b =>
                 {
-                    b.HasOne("CascadeComboboxAsp2.Models.City", "City")
-                        .WithMany("Customers")
-                        .HasForeignKey("CityId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("CascadeComboboxAsp2.Models.Locality", "Locality")
-                        .WithMany("Customers")
-                        .HasForeignKey("LocalityId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.HasOne("CascadeComboboxAsp2.Models.SubLocality", "SubLocality")
                         .WithMany("Customers")
-                        .HasForeignKey("SubLocalityId")
+                        .HasForeignKey("SublocalityId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
